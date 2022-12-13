@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OBSERVABLE } from '../constant/route';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+
+  data = [
+    {
+      name:'rxjs',
+      routerLink: OBSERVABLE.path,
+    }
+  ]
 
 }
