@@ -1,120 +1,121 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ASYNC_AWAIT, ASYNC_SUBJECT, CONCAT_MAP, CUSTOM_OBSERVABLE, DT_DUC, ERROR, FILTER, FLAT, FROM_EVENT, INTERVAL, MAP, MERGE, MERGE_MAP, OF_FROM, PLUCK, PROMISE, REDUCE, REPLAY_SUBJECT, R_RW_S_D, START_WITH, SWITCH_MAP, TAKE, TAP, TO_ARRAY } from 'src/app/constant/route';
 import { ObservableComponent } from './observable.component';
 
 const routes: Routes = [
   { path: '', component: ObservableComponent },
   {
-    path: 'of-from',
+    path: OF_FROM.path,
     loadChildren: () =>
       import('./of-from/of-from.module').then((m) => m.OfFromModule),
   },
   {
-    path: 'interval',
+    path: INTERVAL.path,
     loadChildren: () =>
       import('./interval/interval.module').then((m) => m.IntervalModule),
   },
   {
-    path: 'custom-observable',
+    path: CUSTOM_OBSERVABLE.path,
     loadChildren: () =>
       import('./custom-observable/custom-observable.module').then(
         (m) => m.CustomObservableModule
       ),
   },
   {
-    path: 'map',
+    path: MAP.path,
     loadChildren: () => import('./map/map.module').then((m) => m.MapModule),
   },
   {
-    path: 'r-rw-s-d',
+    path: R_RW_S_D.path,
     loadChildren: () =>
       import('./r-rw-s-d/r-rw-s-d.module').then((m) => m.RRwSDModule),
   },
   {
-    path: 'dt-duc',
+    path: DT_DUC.path,
     loadChildren: () =>
       import('./dt-duc/dt-duc.module').then((m) => m.DtDucModule),
   },
   {
-    path: 'pluck',
+    path: PLUCK.path,
     loadChildren: () =>
       import('./pluck/pluck.module').then((m) => m.PluckModule),
   },
   {
-    path: 'take-tl-tu-ta-timer',
+    path: TAKE.path,
     loadChildren: () =>
       import('./take-tl-tu-ta-timer/take-tl-tu-ta-timer.module').then(
         (m) => m.TakeTlTuTaTimerModule
       ),
   },
   {
-    path: 'replay-subject',
+    path: REPLAY_SUBJECT.path,
     loadChildren: () =>
       import('./replay-subject/replay-subject.module').then(
         (m) => m.ReplaySubjectModule
       ),
   },
   {
-    path: 'async-subject',
+    path: ASYNC_SUBJECT.path,
     loadChildren: () =>
       import('./async-subject/async-subject.module').then(
         (m) => m.AsyncSubjectModule
       ),
   },
   {
-    path: 'error-handling-catch-retry',
+    path: ERROR.path,
     loadChildren: () =>
       import(
         './error-handling-catch-retry/error-handling-catch-retry.module'
       ).then((m) => m.ErrorHandlingCatchRetryModule),
   },
   {
-    path: 'switch-map',
+    path: SWITCH_MAP.path,
     loadChildren: () =>
       import('./switch-map/switch-map.module').then((m) => m.SwitchMapModule),
   },
   {
-    path: 'merge-map',
+    path: MERGE_MAP.path,
     loadChildren: () =>
       import('./merge-map/merge-map.module').then((m) => m.MergeMapModule),
   },
   {
-    path: 'concat-map',
+    path: CONCAT_MAP.path,
     loadChildren: () =>
       import('./concat-map/concat-map.module').then((m) => m.ConcatMapModule),
   },
   {
-    path: 'merge',
+    path: MERGE.path,
     loadChildren: () =>
       import('./merge/merge.module').then((m) => m.MergeModule),
   },
   {
-    path: 'flat',
+    path: FLAT.path,
     loadChildren: () => import('./flat/flat.module').then((m) => m.FlatModule),
   },
   {
-    path: 'to-array',
+    path: TO_ARRAY.path,
     loadChildren: () =>
       import('./to-array/to-array.module').then((m) => m.ToArrayModule),
   },
   {
-    path: 'reduce',
+    path: REDUCE.path,
     loadChildren: () =>
       import('./reduce/reduce.module').then((m) => m.ReduceModule),
   },
   {
-    path: 'tap',
+    path: TAP.path,
     loadChildren: () => import('./tap/tap.module').then((m) => m.TapModule),
   },
   {
-    path: 'start-with',
+    path: START_WITH.path,
     loadChildren: () =>
       import('./start-with/start-with.module').then((m) => m.StartWithModule),
   },
-  { path: 'form-event', loadChildren: () => import('./form-event/form-event.module').then(m => m.FormEventModule) },
-  { path: 'promise', loadChildren: () => import('./promise/promise.module').then(m => m.PromiseModule) },
-  { path: 'async-await', loadChildren: () => import('./async-await/async-await.module').then(m => m.AsyncAwaitModule) },
-  { path: 'filter', loadChildren: () => import('./filter/filter.module').then(m => m.FilterModule) },
+  { path: FROM_EVENT.path, loadChildren: () => import('./form-event/form-event.module').then(m => m.FormEventModule) },
+  { path: PROMISE.path, loadChildren: () => import('./promise/promise.module').then(m => m.PromiseModule) },
+  { path: ASYNC_AWAIT.path, loadChildren: () => import('./async-await/async-await.module').then(m => m.AsyncAwaitModule) },
+  { path: FILTER.path, loadChildren: () => import('./filter/filter.module').then(m => m.FilterModule) },
 ];
 
 @NgModule({

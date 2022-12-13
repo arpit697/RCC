@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ASYNC_AWAIT, CUSTOM_OBSERVABLE, DT_DUC, FILTER, FROM_EVENT, INTERVAL, MAP, OF_FROM, PLUCK, PROMISE, R_RW_S_D, TAKE, TAP, TO_ARRAY } from 'src/app/constant/route';
 
 @Component({
   selector: 'app-observable',
@@ -9,60 +10,60 @@ export class ObservableComponent {
   data = [
     {
       name: 'From Event',
-      routerLink: '/home/observable/form-event',
+      routerLink: FROM_EVENT.path,
     },
     {
       name: 'To Array',
-      routerLink: '/home/observable/to-array',
+      routerLink: TO_ARRAY.path,
     },
     {
       name: 'Of And From',
-      routerLink: '/home/observable/of-from',
+      routerLink: OF_FROM.path,
     },
     {
       name: 'Interval',
-      routerLink: '/home/observable/interval',
+      routerLink: INTERVAL.path,
     },
     {
       name: 'Custom Observable',
-      routerLink: '/home/observable/custom-observable',
+      routerLink: CUSTOM_OBSERVABLE.path,
     },
     {
       name: 'Promise',
-      routerLink: '/home/observable/promise',
+      routerLink: PROMISE.path,
     },
     {
       name: 'Async Awiat',
-      routerLink: '/home/observable/async-await',
+      routerLink: ASYNC_AWAIT.path,
     },
     {
       name: 'Map',
-      routerLink: '/home/observable/map',
+      routerLink: MAP.path,
     },
     {
       name: 'Pluck',
-      routerLink: '/home/observable/pluck',
+      routerLink: PLUCK.path,
     },
     {
       name: 'Filter',
-      routerLink: '/home/observable/filter',
+      routerLink: FILTER.path,
     },
     {
       name: 'Tap',
-      routerLink: '/home/observable/tap',
+      routerLink: TAP.path,
     },
 
     {
       name: 'Take , Take Last and Take Until',
-      routerLink : '/home/observable/take-tl-tu-ta-timer'
+      routerLink : TAKE.path
     },
     {
       name: 'Retry , Retry When , Scan and Delay',
-      routerLink : '/home/observable/r-rw-s-d'
+      routerLink : R_RW_S_D.path
     },
     {
-      name: 'DebounceTime & DistinctUntilChanged', 
-      routerLink : '/home/observable/dt-duc'
+      name: 'DebounceTime & DistinctUntilChanged',
+      routerLink : DT_DUC.path
     }
   ];
 }
