@@ -1,0 +1,23 @@
+.heading{
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    height: 80%;
+    align-items: center;
+    padding: 5em;
+    gap: 5em;
+    .card{
+        min-height: 10em;
+        border: 1px solid black;
+        padding: 1em;
+    }
+}
+mat-card-title{
+    padding-bottom: 2em;
+}
+

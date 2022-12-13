@@ -1,0 +1,28 @@
+
+<mat-card class="heading">
+  <mat-card-title>Custom Observable</mat-card-title>
+</mat-card>
+<mat-card class="container">
+  <mat-card class="card">
+    <mat-card-title>Manual</mat-card-title>
+    <mat-card-content>
+      <ul [ngClass]="techStatus =='completed'?'completed' : techStatus == 'error' ? 'error' : ''" class="techList" id="elContainer"></ul>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="card">
+    <mat-card-title>Custom Interval Observable</mat-card-title>
+    <mat-card-content>
+      <ul id="elContainer2" class="techList"  [ngClass]="techStatus2 =='completed'?'completed' : techStatus2 == 'error' ? 'error' : ''" class="techList"></ul>
+    </mat-card-content>
+  </mat-card>
+</mat-card>
+
+<mat-card class="container">
+  <mat-card class="card">
+    <mat-card-title>Random Name</mat-card-title>
+    <mat-card-subtitle>Current Name : - {{name}}</mat-card-subtitle>
+    <mat-card-content>
+      <ul ></ul>
+    </mat-card-content>
+  </mat-card>
+</mat-card>

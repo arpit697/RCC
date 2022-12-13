@@ -1,0 +1,19 @@
+.heading{
+    padding: 2em;
+    text-align: center;
+    font-size: 2em;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 80%;
+    align-items: center;
+    padding: 5em;
+    gap: 5em;
+    .card{
+        min-height: 10em;
+        border: 1px solid black;
+        align-items: center;
+        justify-content: center;
+    }
+}

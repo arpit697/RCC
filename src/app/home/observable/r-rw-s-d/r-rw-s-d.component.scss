@@ -1,0 +1,26 @@
+.heading{
+    padding: 2em;
+    text-align: center;
+    font-size: 2em;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    min-height: 100%;
+    align-items: center;
+    padding: 5em;
+    gap: 5em;
+    .card{
+        min-height: 10em;
+        border: 1px solid black;
+        padding: 1em;
+    }
+}
+mat-card-title{
+    padding-bottom: 2em;
+}
+
+mat-card-actions{
+    justify-content: center;
+    margin-top: 3em;
+}

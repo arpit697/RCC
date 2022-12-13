@@ -1,0 +1,29 @@
+<mat-card class="heading">
+  <mat-card-title>Filter</mat-card-title>
+</mat-card>
+<mat-card class="container">
+  <mat-card class="card">
+    <mat-card-title> Filter : By Length</mat-card-title>
+    <mat-card-content>
+      <ul>
+        <li *ngFor="let item of data">{{ item.name }}</li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="card">
+    <mat-card-title> Filter : By Gender</mat-card-title>
+    <mat-card-content>
+      <ul>
+        <li *ngFor="let item of data2">{{ item.name }}</li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="card">
+    <mat-card-title>Filter : By Specific Item</mat-card-title>
+    <mat-card-content>
+      <ul>
+        <li *ngFor="let item of data3">{{ item.name }}</li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+</mat-card>
